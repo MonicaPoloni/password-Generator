@@ -23,17 +23,18 @@ regraSenhas = {
     }
 }
 # Menu:
-rodando = True 
+rodando = True
 while rodando:
-    sleep(0.2) # Pausa
+    sleep(0.2)
     print('\n----- GERADOR DE SENHAS -----')
     print('1. Gerar Senha')
     print('2. Sair')
     print('----------------------------')
     opcao = int(input('Escolha uma opção [1 | 2]: '))
 
-    if opcao == 1: 
-        sleep(0.5)  # Pausa
+
+    if opcao == 1:
+        sleep(0.5)
         print('\n--- GERAR SENHA ---')
         nivelDif = input('Qual o nível de dificuldade?: [BAIXO | MÉDIO | ALTO]: ').lower()
 
@@ -65,13 +66,13 @@ while rodando:
             senha_final = "-".join(partesDaSenha)
              # Exibe a senha gerada
             print(f'\nSua senha [{nivelDif.upper()}] é: {senha_final}')
-            sleep(1) # Pausa
+            sleep(1)
 
-        else:  
+        else:
             print('Nível de dificuldade inválido. Tente BAIXO, MÉDIO ou ALTO.')
-            sleep(1) # Pausa
+            sleep(1)
     elif opcao == 2:
         print('Saindo do programa...')
         break
-    else: 
+    else:
         print('Opção inválida. Digite apenas 1 ou 2.')
